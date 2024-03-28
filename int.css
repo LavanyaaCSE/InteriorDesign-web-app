@@ -1,0 +1,74 @@
+body{
+	margin: 0;
+	padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.container{
+	height:100vh;
+	width: 100%;
+	background-image: url("C:/Users/chefa/Downloads/dinnnes.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: 2s;
+
+	animation-name:animate;
+	animation-direction: alternate-reverse;
+	animation-duration: 30s;
+	animation-fill-mode: forwards;
+	animation-iteration-count:infinite ;
+	animation-play-state:running ;
+	animation-timing-function: case-in-out;
+}
+
+@keyframes animate{
+	0%{
+		background-image: url("C:/Users/chefa/Downloads/bathroomtem.webp");
+	}
+	20%{
+		background-image: url("C:/Users/chefa/Downloads/lightings int14.jpg");
+	}
+	40%{
+		background-image: url("C:/Users/chefa/Downloads/kitchentem.jpg");
+	}
+	60%{
+		background-image: url("C:/Users/chefa/Downloads/lightings int12.webp");
+	}
+	80%{
+		background-image: url("C:/Users/chefa/Downloads/poos.jpg");
+	}
+	100%{
+		background-image: url("C:/Users/chefa/Downloads/lightings int4.jpg");
+	}
+}
+.links{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 200px;
+	padding-bottom:100px ;
+}
+.links li{
+	list-style: none;
+}
+.links li a{
+	font-size:30px;
+	text-decoration:none;
+	color:whitesmoke;
+	font-family:cursive;
+	background-color:#3E4774;
+}
+.para1{
+	text-align: center;
+    position: absolute;
+    bottom: 5px;
+    lefte:10px;
+    font-size: 25px;
+    color: whitesmoke;
+    font-style: italic;
+    background-color:#938A8A ;
+	font-family: italic;
+}
+
+
